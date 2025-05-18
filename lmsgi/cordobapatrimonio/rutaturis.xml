@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta Turística en Córdoba</name>
+    <description>Ruta turística por los principales puntos de interés de Córdoba, España.</description>
+
+    <!-- PUNTO 1: Medina Azahara -->
+    <Placemark>
+      <name>Medina Azahara</name>
+      <description>Yacimiento arqueológico de la ciudad palatina del Califato de Córdoba.</description>
+      <Point>
+        <coordinates>-4.853178,37.881044,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- PUNTO 2: Alcázar de los Reyes Cristianos -->
+    <Placemark>
+      <name>Alcázar de los Reyes Cristianos</name>
+      <description>Castillo medieval con jardines y vistas panorámicas del río Guadalquivir.</description>
+      <Point>
+        <coordinates>-4.779671,37.885263,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- PUNTO 3: Mezquita-Catedral de Córdoba -->
+    <Placemark>
+      <name>Mezquita-Catedral de Córdoba</name>
+      <description>Monumento histórico que combina elementos islámicos y cristianos, conocido por su famosa sala de columnas y arcos.</description>
+      <Point>
+        <coordinates>-4.779387,37.878906,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- PUNTO 4: Puente Romano de Córdoba -->
+    <Placemark>
+      <name>Puente Romano de Córdoba</name>
+      <description>Puente histórico sobre el río Guadalquivir con vistas a la ciudad.</description>
+      <Point>
+        <coordinates>-4.779198,37.878408,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- PUNTO 5: La Judería -->
+    <Placemark>
+      <name>La Judería</name>
+      <description>Barrio histórico de Córdoba, lleno de calles estrechas, patios y la Sinagoga de Córdoba.</description>
+      <Point>
+        <coordinates>-4.779804,37.883640,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- PUNTO 6: Palacio de Viana -->
+    <Placemark>
+      <name>Palacio de Viana</name>
+      <description>Palacio renacentista con 12 hermosos patios llenos de flores y vegetación.</description>
+      <Point>
+        <coordinates>-4.772743,37.883745,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Ruta entre los puntos -->
+    <Placemark>
+      <name>Ruta Turística</name>
+      <description>Ruta recomendada para visitar los principales puntos de interés de Córdoba.</description>
+      <LineString>
+        <coordinates>
+          -4.853178,37.881044,0
+          -4.779671,37.885263,0
+          -4.779387,37.878906,0
+          -4.779198,37.878408,0
+          -4.779804,37.883640,0
+          -4.772743,37.883745,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+  </Document>
+</kml>
