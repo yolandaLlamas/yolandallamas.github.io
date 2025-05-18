@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario>
+    <dia nombre="Lunes">
+        <actividad>
+            <horaInicio>8:15</horaInicio>
+            <horaFin>9:15</horaFin>
+            <asignatura>IPE1</asignatura>
+    </actividad>
+    <actividad>
+           <horaInicio>9:15</horaInicio>
+          <horaFin>10:15</horaFin>
+            <asignatura>IPE1</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>10:15</horaInicio>
+            <horaFin>11:15</horaFin>
+           <asignatura>LMSGI</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>11:45</horaInicio>
+           <horaFin>12:45</horaFin>
+           <asignatura>GBD</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>13:45</horaFin>
+            <asignatura>GBD</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+            <asignatura>DIGI</asignatura>
+</actividad>
+    </dia>
+    <dia nombre="Martes">
+        <actividad>
+            <horaInicio>8:15</horaInicio>
+            <horaFin>9:15</horaFin>
+            <asignatura>SOST</asignatura>
+    </actividad>
+    <actividad>
+           <horaInicio>9:15</horaInicio>
+          <horaFin>10:15</horaFin>
+            <asignatura>IPE1</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>10:15</horaInicio>
+            <horaFin>11:15</horaFin>
+           <asignatura>LMSGI</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>11:45</horaInicio>
+           <horaFin>12:45</horaFin>
+           <asignatura>LMSGI</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>13:45</horaFin>
+            <asignatura>PAR</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+            <asignatura>PAR</asignatura>
+</actividad>
+    </dia>
+    <dia nombre="miércoles">
+        <actividad>
+            <horaInicio>8:15</horaInicio>
+            <horaFin>9:15</horaFin>
+            <asignatura>ISO</asignatura>
+    </actividad>
+    <actividad>
+           <horaInicio>9:15</horaInicio>
+          <horaFin>10:15</horaFin>
+            <asignatura>ISO</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>10:15</horaInicio>
+            <horaFin>11:15</horaFin>
+           <asignatura>ISO</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>11:45</horaInicio>
+           <horaFin>12:45</horaFin>
+           <asignatura>GBD</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>13:45</horaFin>
+            <asignatura>GBD</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+            <asignatura>GBD</asignatura>
+</actividad>  
+    </dia>
+    <dia nombre="jueves">
+        <actividad>
+            <horaInicio>8:15</horaInicio>
+            <horaFin>9:15</horaFin>
+            <asignatura>GBD</asignatura>
+    </actividad>
+    <actividad>
+           <horaInicio>9:15</horaInicio>
+          <horaFin>10:15</horaFin>
+            <asignatura>ISO</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>10:15</horaInicio>
+            <horaFin>11:15</horaFin>
+           <asignatura>ISO</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>11:45</horaInicio>
+           <horaFin>12:45</horaFin>
+           <asignatura>ISO</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>13:45</horaFin>
+            <asignatura>PAR</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+            <asignatura>PAR</asignatura>
+</actividad>   
+    </dia>
+    <dia nombre="viernes">
+        <actividad>
+            <horaInicio>8:15</horaInicio>
+            <horaFin>9:15</horaFin>
+            <asignatura>FH</asignatura>
+    </actividad>
+    <actividad>
+           <horaInicio>9:15</horaInicio>
+          <horaFin>10:15</horaFin>
+            <asignatura>FH</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>10:15</horaInicio>
+            <horaFin>11:15</horaFin>
+           <asignatura>FH</asignatura>
+</actividad>
+<actividad>
+           <horaInicio>11:45</horaInicio>
+           <horaFin>12:45</horaFin>
+           <asignatura>PAR</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>13:45</horaFin>
+            <asignatura>PAR</asignatura>
+</actividad>
+<actividad>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+            <asignatura>PAR</asignatura>
+</actividad>
+    </dia>
+    </horario>

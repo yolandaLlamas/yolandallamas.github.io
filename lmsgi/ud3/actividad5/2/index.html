@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con Bordes</title>
+   <style>
+  /* Estilo para la tabla con borde doble, table-layout: fixed y width: 100% */
+.double-border {
+    width: 100%; /* La tabla ocupa el 100% del ancho del contenedor */
+    table-layout: fixed; /* Las celdas tienen un ancho fijo, sin importar su contenido */
+    border: 5px double green; /* Borde doble de 5px de color verde alrededor de la tabla */
+    border-collapse: separate; /* Mantiene los bordes separados, permitiendo el borde doble */
+    border-spacing: 0; /* Elimina el espacio entre las celdas */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+}
+
+.double-border td {
+    border: 1px solid green; /* Borde verde alrededor de cada celda */
+    padding: 10px; /* Espacio interno en las celdas */
+    text-align: center; /* Centra el texto dentro de las celdas */
+}
+
+
+
+/* Estilo para la segunda tabla con borde normal verde */
+.normal-border {
+    border: 2px solid green; /* Borde normal de 2px de color verde */
+    width: 50%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Evita los espacios entre las celdas */
+}
+
+.normal-border td {
+    padding: 10px; /* Espacio interno en las celdas */
+    text-align: center; /* Centrado del texto */
+}
+
+   </style>
+</head>
+<body>
+
+    <h2>Primera Tabla con Borde Doble Verde</h2>
+    <table class="double-border" Border = "1">
+        <tr>
+            <th>cabezera</th>
+            <th>cabezera </th>
+          
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </table>
+
+    <h2>Segunda Tabla con Borde Normal Verde</h2>
+    <table  Border = "1" class="normal-border">
+        <tr>
+            <th>cabezera</th>
+            <th>cabezera </th>
+          
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </table>
+
+</body>
+</html>

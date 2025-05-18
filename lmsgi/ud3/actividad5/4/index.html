@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula de Formas con Diferentes Bordes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;  /* Contenedor que contendrá la cuadrícula */
+            display: block;
+        }
+
+        .shape {
+            width: 30%;  /* Cada forma ocupará un 30% del ancho del contenedor */
+            height: 100px; /* Altura de las formas */
+            margin: 10px;
+            border: 5px solid green;  /* Borde verde */
+            float: left;  /* Posiciona las formas de izquierda a derecha */
+        }
+
+        /* Primera forma con esquinas ligeramente circulares */
+        .shape:nth-child(1) {
+            border-radius: 10px;
+        }
+
+        /* Segunda forma con esquinas más circulares */
+        .shape:nth-child(2) {
+            border-radius: 20px;
+        }
+
+        /* Tercera forma con esquinas aún más circulares */
+        .shape:nth-child(3) {
+            border-radius: 40px;
+        }
+          /* Segunda forma con esquinas más circulares */
+          .shape:nth-child(4) {
+            border-radius: 20px;
+        }
+        .shape:nth-child(6) {
+            border-radius: 40px;
+        /* Séptima forma con borde completamente circular */
+        }
+        .shape:nth-child(7) {
+            border-radius: 100%; /* Forma circular */
+        }
+
+        /* Novena forma con la esquina superior derecha y la inferior izquierda redondeadas */
+        .shape:nth-child(9) {
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        /* Esto garantiza que después de la última forma, el contenido fluya bien */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container clearfix">
+    <!-- 9 formas en una cuadrícula 3x3 -->
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+
+</body>
+</html>
+

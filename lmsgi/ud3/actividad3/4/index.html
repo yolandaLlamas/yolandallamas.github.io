@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Párrafos con Bordes y Colores</title>
+    <style>
+        /* Estilo común para todos los párrafos */
+        p {
+            padding: 20px; /* Espacio dentro del borde exterior */
+            margin-bottom: 2px; /* Espacio entre los párrafos */
+            position: relative;
+            color: orange; /* Color del texto naranja */
+        }
+
+        /* Primer párrafo con borde naranja externo y borde negro interno */
+        .orange-border {
+            border: 2px solid orange; /* Borde naranja */
+        }
+
+        .orange-border::before {
+            content: '';
+            position: absolute;
+            top: 5px; left: 5px; right: 5px; bottom: 5px;
+            border: 1px solid black; /* Borde negro interno */
+        }
+
+        /* Segundo párrafo con borde verde externo y borde negro interno */
+        .green-border {
+            border: 2px solid green; /* Borde verde */
+        }
+
+        .green-border::before {
+            content: '';
+            position: absolute;
+            top: 5px; left: 5px; right: 5px; bottom: 5px;
+            border: 1px solid black; /* Borde negro interno */
+        }
+
+        /* Tercer párrafo con borde amarillo punteado externo y borde negro interno */
+        .yellow-border {
+            border: 2px dotted yellow; /* Borde amarillo punteado */
+        }
+
+        .yellow-border::before {
+            content: '';
+            position: absolute;
+            top: 5px; left: 5px; right: 5px; bottom: 5px;
+            border: 1px solid black; /* Borde negro interno */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tres párrafos con diferentes colores de borde y texto -->
+    <p class="orange-border">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam convallis nisl, sed imperdiet ipsum. Suspendisse lectus ante, ultrices sit amet efficitur at, tincidunt a nisi. Duis in nisl fermentum, auctor dui a, vehicula massa. Cras pulvinarenenatis, purus id dignissim pulvinar, odio elit facilisis justo, id interdum felis est in ipsum.</p>
+    <p class="green-border">Cras scelerisque a elit ut consectetur. Curabitur ac blandit quam. Nam facilisis non quam at pellentesque. Cras pulvinar sapien et ante dignissim, quis feugiat dolor condimentum. Sed tortor dui, rhoncus eget orci id, semper pellentesque justo. Vivamus eleifend lectus at sem pulvinar, id vehicula neque lacinia. Integer sit amet condimentum urna.</p>
+    <p class="yellow-border">Cras scelerisque a elit ut consectetur. Curabitur ac blandit quam. Nam facilisis non quam at pellentesque. Cras pulvinar sapien et ante dignissim, quis feugiat dolor condimentum. Sed tortor dui, rhoncus eget orci id, semper pellentesque justo. Vivamus eleifend lectus at sem pulvinar, id vehicula neque lacinia. Integer sit amet condimentum urna.</p>
+
+</body>
+</html>

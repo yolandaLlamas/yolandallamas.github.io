@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de mix-blend-mode</title>
+    <style>
+        div {
+            background-image: url('playa.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+            background-repeat: no-repeat; /* No se repite la imagen */
+            font-family: georgia, serif; /* Fuente para el texto */
+            font-size: 7vw; /* El tamaño de la fuente depende del ancho de la ventana */
+            text-align: center; /* Centra el texto */
+            border: solid; /* Aplica un borde alrededor del div */
+        }
+
+        .blender {
+            mix-blend-mode: difference; /* Modo de mezcla difference */
+            color: yellow; /* Color del texto */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p class="blender">Este es un texto con el modo de mezcla "difference".</p>
+    </div>
+
+</body>
+</html>

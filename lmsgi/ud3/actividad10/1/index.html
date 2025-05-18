@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Transición</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s; /* Definir que la transición será sobre el ancho con duración de 2s */
+            transition-timing-function: ease-in-out; /* La transición será suave, comenzando y terminando lentamente */
+        }
+
+        div:hover {
+            width: 300px; /* El ancho cambia a 300px cuando se pasa el cursor */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* Estilo base para el div */
+div {
+    color: red; /* Color del texto */
+    background-color: gold; /* Color de fondo */
+    font-size: 4vw; /* Tamaño de fuente en función del ancho de la ventana */
+    padding: 2vw; /* Relleno de 2vw en todos los lados */
+    margin: 2vw; /* Margen de 2vw en todos los lados */
+    border: solid; /* Borde sólido alrededor del div */
+}
+
+/* Filtro de contraste */
+.contrast {
+    filter: contrast(100); /* Establece el contraste al 100% (valor predeterminado) */
+}
+
+/* Filtro de brillo */
+.brightness {
+    filter: brightness(50%); /* Reduce el brillo al 50% */
+}
+
+/* Filtro invertido */
+.inverted {
+    filter: invert(100%); /* Invierte los colores al 100% */
+}
+
+/* Filtro de rotación de tono (hue) */
+.rotated {
+    filter: hue-rotate(200deg); /* Rota el tono de los colores por 200 grados */
+}
+
+/* Filtro en escala de grises */
+.grayscale {
+    filter: grayscale(100%); /* Convierte la imagen o fondo a escala de grises */
+}
+/* Estilo base para el div */
+div {
+    color: red; /* Color del texto */
+    background-color: gold; /* Color de fondo */
+    font-size: 4vw; /* Tamaño de fuente en función del ancho de la ventana */
+    padding: 2vw; /* Relleno de 2vw en todos los lados */
+    margin: 2vw; /* Margen de 2vw en todos los lados */
+    border: solid; /* Borde sólido alrededor del div */
+}
+
+/* Filtro de contraste */
+.contrast {
+    filter: contrast(100); /* Establece el contraste al 100% (valor predeterminado) */
+}
+
+/* Filtro de brillo */
+.brightness {
+    filter: brightness(50%); /* Reduce el brillo al 50% */
+}
+
+/* Filtro invertido */
+.inverted {
+    filter: invert(100%); /* Invierte los colores al 100% */
+}
+
+/* Filtro de rotación de tono (hue) */
+.rotated {
+    filter: hue-rotate(200deg); /* Rota el tono de los colores por 200 grados */
+}
+
+/* Filtro en escala de grises */
+.grayscale {
+    filter: grayscale(100%); /* Convierte la imagen o fondo a escala de grises */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Borde</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+<style>
+    /* Estilo común para los divs */
+div {
+    width: 200px;         /* Ancho de los divs */
+    height: 100px;        /* Alto de los divs */
+    margin: 10px;         /* Espacio entre los divs */
+    display: inline-block; /* Para que los divs estén uno al lado del otro */
+    text-align: center;    /* Centrado del texto */
+    line-height: 100px;    /* Centrado vertical del texto */
+}
+
+/* Primer div: borde sólido */
+.solid-border {
+    border: 3px solid red; /* Borde sólido de 3px de color rojo */
+    background-color: lightcoral; /* Color de fondo */
+}
+
+/* Segundo div: borde punteado */
+.dotted-border {
+    border: 3px dotted blue; /* Borde punteado de 3px de color azul */
+    background-color: lightblue; /* Color de fondo */
+}
+
+/* Tercer div: borde doble */
+.double-border {
+    border: 5px double green; /* Borde doble de 5px de color verde */
+    background-color: lightgreen; /* Color de fondo */
+}
+
+/* Cuarto div: borde de estilo inset (hundido) */
+.inset-border {
+    border: 3px inset purple; /* Borde inset de 3px de color morado */
+    background-color: lavender; /* Color de fondo */
+}
+
+</style>
+</head>
+<body>
+
+    <div class="solid-border">Borde Sólido</div>
+    <div class="dotted-border">Borde Punteado</div>
+    <div class="double-border">Borde Doble</div>
+    <div class="inset-border">Borde Inset</div>
+
+</body>
+</html>

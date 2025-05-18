@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Blend Mode</title>
+    <style>
+        /* Contenedor para las dos cajas */
+        .container {
+            display: flex; /* Usa flexbox para alinear las cajas */
+            margin: 0; /* Elimina cualquier margen */
+            padding: 0; /* Elimina cualquier padding */
+            width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+        }
+
+        /* Estilo común para las cajas */
+        .box {
+            width: 45%; /* Cada caja ocupa el 45% del contenedor */
+            height: 300px; /* Altura fija */
+            position: relative; /* Necesario para colocar el texto sobre la imagen */
+            text-align: center;
+            color: white; /* Color de texto */
+            font-size: 24px; /* Tamaño de la fuente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Primera caja: imagen sin blend */
+        .box-not-blended {
+            background-image: url('playa.jpg');
+            background-size: cover; /* Cubrir toda la caja con la imagen */
+            background-repeat: no-repeat; /* No repetir la imagen */
+        }
+
+        /* Segunda caja: imagen con blend */
+        .box-blended {
+            background-image: url('playa.jpg');
+            background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+            background-size: cover; /* Cubrir toda la caja con la imagen */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            background-blend-mode: darken; /* Modo de mezcla para oscurecer la imagen */
+        }
+
+        /* Estilo para el texto sobre la imagen */
+        .box p {
+            position: absolute;
+            top: 20px; /* Coloca el texto 20px desde la parte superior */
+            left: 50%;
+            transform: translateX(-50%); /* Centra el texto horizontalmente */
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Caja sin mezcla -->
+        <div class="box box-not-blended">
+            <p>Not Blend</p>
+        </div>
+
+        <!-- Caja con blend -->
+        <div class="box box-blended">
+            <p>Blend</p>
+        </div>
+    </div>
+
+</body>
+</html>

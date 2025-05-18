@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrafos con Bordes por Clase</title>
+    <style>
+        /* Estilo común para todos los párrafos */
+        p {
+            padding: 10px; /* Espacio dentro del borde */
+            margin-bottom: 10px; /* Espacio entre los párrafos */
+        }
+
+        /* Primer párrafo con clase 'red-border' y borde rojo */
+        .red-border {
+            border: 2px solid red; /* Borde rojo */
+            color: blue;
+        }
+        
+        .blue-border {
+            border: 2px solid blue; /* Borde azul */
+            color: blue;
+
+        }
+
+        /* Segundo párrafo con clase 'green-border' y borde verde */
+        .green-border {
+            border: 2px solid green; /* Borde verde */
+            color: blue;
+        }
+
+        /* Tercer párrafo con clase 'blue-border' y borde azul */
+        .blue-red-border {
+            padding: 10px; /* Espacio dentro del borde */
+            margin-bottom: 20px; /* Espacio entre los párrafos */
+            border-top: 3px solid blue; /* Borde superior azul de 3px */
+            border-bottom: 3px solid red; /* Borde inferior rojo de 3px */
+            border-left: 3px solid grey;
+            border-right: 3px solid grey;
+            color: blue;
+        }
+
+        /* Cuarto párrafo con clase 'dotted-border' y borde punteado amarillo */
+        .dotted-border {
+            border: 2px dotted yellow; /* Borde punteado amarillo */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cuatro párrafos con diferentes clases -->
+    <p class="red-border"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam convallis nisl, sed imperdiet ipsum. Suspendisse lectus ante, ultrices sit amet efficitur at, tincidunt a nisi. Duis in nisl fermentum, auctor dui a, vehicula massa. Cras pulvinarenenatis, purus id dignissim pulvinar, odio elit facilisis justo, id interdum felis est in ipsum. </p>
+    <p class="green-border">Cras scelerisque a elit ut consectetur. Curabitur ac blandit quam. Nam facilisis non quam at pellentesque. Cras pulvinar sapien et ante dignissim, quis feugiat dolor condimentum. Sed tortor dui, rhoncus eget orci id, semper pellentesque justo. Vivamus eleifend lectus at sem pulvinar, id vehicula neque lacinia. Integer sit amet condimentum urna..</p>
+    <p class="blue-red-border">Pellentesque rhoncus aliquam quam, ut egestas dolor consectetur nec. Suspendisse diam orci, viverra nec varius et, faucibus quis enim. Nam maximus quis erat sit amet placerat. Sed consequat dignissim justo, ac commodo quam.</p>
+    <p class="dotted-border">Cras scelerisque a elit ut consectetur. Curabitur ac blandit quam. Nam facilisis non quam at pellentesque. Cras pulvinar sapien et ante dignissim, quis feugiat dolor condimentum. Sed tortor dui, rhoncus eget orci id, semper pellentesque justo. Vivamus eleifend lectus at sem pulvinar, id vehicula neque lacinia. Integer sit amet condimentum urna..</p>
+
+</body>
+</html>

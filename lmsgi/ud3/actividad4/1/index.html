@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas con Fondo de Imagen y Color</title>
+    <style>
+        /* Estilo común para las cajas */
+        .box {
+            width: 400px; /* Ancho de la caja */
+            height: 100px; /* Alto de la caja */
+            padding: 20px;
+            margin-bottom: 20px;
+            color: black; /* Color del texto */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+            border: 2px solid black; /* Borde negro para todas las cajas */
+        }
+
+        /* Primera caja con fondo de imagen que no se repite */
+        .box1 {
+            background-image: url('flores.jpg'); /* URL de la imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir toda la caja */
+            background-repeat: no-repeat; /* No repetir la imagen */
+        }
+
+        /* Segunda caja con solo color de fondo */
+        .box2 {
+            background-color: white ; /* Color de fondo */
+        }
+
+        /* Tercera caja con fondo de imagen que no se repite */
+        .box3 {
+            background-image: url('flores.jpg'); /* URL de la imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir toda la caja */
+            background-repeat: no-repeat; /* No repetir la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cajas con diferentes fondos -->
+    <div class="box box1">
+        <p>BOX 1</p>
+    </div>
+
+    <div class="box box2">
+        <p>BOX 2</p>
+    </div>
+
+    <div class="box box3">
+        <p>BOX 3</p>
+    </div>
+
+</body>
+</html>

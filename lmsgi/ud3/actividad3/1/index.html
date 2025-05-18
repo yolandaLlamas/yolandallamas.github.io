@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos con Margen, Borde y Padding</title>
+    <style>
+        /* Estilo para el contenedor del elemento con margen simulado */
+        .styled-element-container {
+            margin: 20px; /* El margen real, que es el espacio alrededor del elemento */
+            box-shadow: 0 0 0 20px grey; /* Simula el margen de color azul oscuro */
+        }
+
+        /* Estilo para el elemento (por ejemplo, un párrafo) */
+        .styled-element {
+            border: 2px solid yellow; /* Borde de 2px, color amarillo */
+            padding: 15px; /* Padding de 15px, que será de color rosa muy claro */
+            background-color: #ffe6f1; /* Fondo rosa muy claro para visualizar el padding */
+        }
+
+        p {
+            color: orange; /* Párrafos en color naranja */
+        }
+
+        h1 {
+            color: red; /* Encabezado en color rojo */
+        }
+
+        /* Subraya el segundo párrafo */
+        p:nth-of-type(2) {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="styled-element-container">
+        <div class="styled-element">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, orci nec tincidunt eleifend, urna sapien efficitur elit, eu pellentesque urna lectus in nisi. Quisque condimentum volutpat lectus ac luctus. Sed in ultrices enim, a suscipit massa. Mauris ut commodo erat. Curabitur metus enim, pulvinar ullamcorper blandit sed, aliquet sit amet lectus. Quisque vel malesuada risus. Mauris nibh lacus, euismod lobortis commodo ut, hendrerit id felis. Curabitur odio nulla, lacinia vel pellentesque vel, scelerisque quis orci. Sed pellentesque magna id leo rhoncus, vel efficitur quam consectetur.</p>
+            <p>IES gran capitan </p>
+        </div>
+    </div>
+</body>
+</html>

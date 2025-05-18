@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Navegación con Transiciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Estilos del contenedor del menú */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos de la lista de navegación */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 20px;
+      position: relative;
+    }
+
+    /* Estilos de los enlaces */
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: block;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6347; /* Cambio de color al pasar el ratón */
+      transform: translateY(-3px); /* Efecto de elevación */
+    }
+
+    /* Submenú con transición */
+    li:hover > ul {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Submenú oculto por defecto */
+    ul > li > ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      padding: 0;
+    }
+
+    /* Estilos de los enlaces dentro del submenú */
+    ul > li > ul li a {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      text-align: left;
+      transition: background-color 0.3s ease;
+    }
+
+    ul > li > ul li a:hover {
+      background-color: #555;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a>
+        <ul>
+          <li><a href="#">Diseño Web</a></li>
+          <li><a href="#">Desarrollo</a></li>
+          <li><a href="#">SEO</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Portafolio</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
