@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Se permite cualquier orden de los elementos dentro de persona -->
+                            <xs:all>
+                                <xs:element name="datos">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="nombre" type="xs:string"/>
+                                            <xs:element name="apellidos" type="xs:string"/>
+                                            <xs:element name="dni">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="\d{8}[A-Z]"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="comentario" type="xs:string"/>
+                                <xs:element name="forma-pago">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="numero-tarjeta" minOccurs="0" type="xs:string"/>
+                                            <xs:element name="numero-cuenta" minOccurs="0" type="xs:string"/>
+                                        </xs:sequence>
+                                        <xs:attribute name="metodo" type="xs:string" use="required"/>
+                                    </xs:complexType>
+                                </xs:element>
+                                <!-- Elemento de nota añadido, con valores entre 0 y 10 -->
+                                <xs:element name="nota">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:decimal">
+                                            <xs:minInclusive value="0"/>
+                                            <xs:maxInclusive value="10"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                            </xs:all>
+                        </xs:sequence>
+                        <xs:attribute name="fecha-nacimiento" type="xs:date" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

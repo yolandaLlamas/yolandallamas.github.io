@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<personas>
+    <persona fecha-nacimiento="1990-05-15">
+        <datos>
+            <nombre>Juan</nombre>
+            <apellidos>Pérez Gómez</apellidos>
+            <dni>12345678A</dni>
+        </datos>
+        <comentario>Gran aficionado a la lectura y al deporte.</comentario>
+        <forma-pago metodo="tarjeta">
+            <numero-tarjeta>1234567812345678</numero-tarjeta>
+        </forma-pago>
+    </persona>
+    <persona>
+        <datos>
+            <nombre>María</nombre>
+            <apellidos>López Fernández</apellidos>
+            <dni>87654321B</dni>
+        </datos>
+        <comentario>Profesora de matemáticas con gran vocación.</comentario>
+        <forma-pago metodo="transferencia">
+            <numero-cuenta>ES7600191800001234567890</numero-cuenta>
+        </forma-pago>
+    </persona>
+</personas>
+

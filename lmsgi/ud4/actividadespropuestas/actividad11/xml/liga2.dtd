@@ -1,0 +1,6 @@
+<!ELEMENT liga (partido*)>
+<!ELEMENT partido (equipo_local, equipo_visitante)>
+<!ELEMENT equipo_local (#PCDATA)>
+<!ELEMENT equipo_visitante (#PCDATA)>
+<!ATTLIST partido goles_local CDATA #REQUIRED>
+<!ATTLIST partido goles_visitante CDATA #REQUIRED>

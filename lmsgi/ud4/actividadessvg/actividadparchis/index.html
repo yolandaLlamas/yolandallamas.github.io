@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas de Parchís</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .ficha {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .rojo { background-color: red; grid-column: 1; grid-row: 1; }
+        .azul { background-color: blue; grid-column: 3; grid-row: 1; }
+        .verde { background-color: green; grid-column: 1; grid-row: 3; }
+        .amarillo { background-color: yellow; color: black; grid-column: 3; grid-row: 3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ficha rojo"></div>
+        <div class="ficha azul"></div>
+        <div class="ficha verde"></div>
+        <div class="ficha amarillo"></div>
+    </div>
+</body>
+</html>
