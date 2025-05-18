@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Currículum</title>
+</head>
+<body>
+
+    <h2>Formulario de Currículum</h2>
+
+    <form action="/procesar_curriculum" method="POST">
+        
+        <!-- Nombre completo (campo de texto) -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required><br><br>
+
+        <!-- Correo electrónico (campo de tipo email) -->
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ejemplo: correo@dominio.com" required><br><br>
+
+        <!-- Fecha de nacimiento (campo de tipo date) -->
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <!-- Teléfono (campo de texto con validación de número) -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 123-456-7890" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$" required><br><br>
+
+        <!-- Género (lista desplegable) -->
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <!-- Experiencia laboral (área de texto) -->
+        <label for="experiencia">Experiencia laboral:</label><br>
+        <textarea id="experiencia" name="experiencia" placeholder="Escribe tu experiencia laboral aquí" rows="5" cols="50" required></textarea><br><br>
+
+        <!-- Nivel de estudios (menú desplegable) -->
+        <label for="estudios">Nivel de estudios:</label>
+        <select id="estudios" name="estudios" required>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="ciclo formativo grado basico">Ciclo Formativo Grado Basico</option>
+            <option value="ciclo formativo grado Medio">Ciclo Formativo Grado Medio</option>
+            <option value="ciclo formativo grado Superior">Ciclo Formativo Grado Superior</option>
+            <option value="master">Master</option>
+            <option value="bachillerato">Bachillerato</option>
+            <option value="universidad">Universidad</option>
+            
+        </select><br><br>
+
+        <!-- Habilidades (checkbox para varias opciones) -->
+        <label>Habilidades:</label><br>
+        <input type="checkbox" id="comunicacion" name="habilidades" value="Comunicación">
+        <label for="comunicacion">Comunicación</label><br>
+
+        <input type="checkbox" id="trabajo_equipo" name="habilidades" value="Trabajo en equipo">
+        <label for="trabajo_equipo">Trabajo en equipo</label><br>
+
+        <input type="checkbox" id="liderazgo" name="habilidades" value="Liderazgo">
+        <label for="liderazgo">Liderazgo</label><br>
+
+        <input type="checkbox" id="informatica" name="habilidades" value="Informática">
+        <label for="informatica">Informática</label><br><br>
+
+        <!-- Idiomas (campo de texto) -->
+        <label for="idiomas">Idiomas:</label>
+        <input type="text" id="idiomas" name="idiomas" placeholder="Indica los idiomas que dominas (opcional)"><br><br>
+
+        <!-- Referencias (campo de texto) -->
+        <label for="referencias">Referencias (opcional):</label>
+        <input type="text" id="referencias" name="referencias" placeholder="Indica referencias si las tienes"><br><br>
+
+        <!-- Enviar currículum (botón de envío) -->
+        <input type="submit" value="Enviar Currículum">
+
+    </form>
+
+</body>
+</html>

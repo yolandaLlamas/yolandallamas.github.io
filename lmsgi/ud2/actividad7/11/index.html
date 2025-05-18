@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Opinión</title>
+</head>
+<body>
+
+    <h2>Encuesta de Opinión</h2>
+    <form action="/procesar_encuesta" method="POST">
+        
+        <!-- Campo de Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Valoración del Servicio (lista desplegable) -->
+        <label for="valoracion">Valoración del servicio:</label>
+        <select id="valoracion" name="valoracion" required>
+            <option value="">Selecciona una opción</option>
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+        </select><br><br>
+
+        <!-- Comentarios Adicionales (opcional) -->
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí (opcional)"></textarea><br><br>
+
+        <!-- Checkbox para recibir más encuestas -->
+        <label>
+            <input type="checkbox" name="recibir_encuestas">
+            Me gustaría recibir más encuestas en el futuro
+        </label><br><br>
+
+        <!-- Botón de Enviar -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>

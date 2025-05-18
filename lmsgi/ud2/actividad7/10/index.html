@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Vuelo</title>
+</head>
+<body>
+
+    <h2>Formulario de Reserva de Vuelo</h2>
+
+    <form action="/procesar_reserva" method="POST">
+        
+        <!-- Nombre Completo (campo de texto) -->
+        <label for="nombre_completo">Nombre completo:</label>
+        <input type="text" id="nombre_completo" name="nombre_completo" minlength="3" required><br><br>
+
+        <!-- Fecha de salida (campo de tipo date) -->
+        <label for="fecha_salida">Fecha de salida:</label>
+        <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+
+        <!-- Clase de vuelo (menú desplegable) -->
+        <label for="clase_vuelo">Clase de vuelo:</label>
+        <select id="clase_vuelo" name="clase_vuelo">
+            <option value="economica">Económica</option>
+            <option value="ejecutiva">Ejecutiva</option>
+            <option value="primera_clase">Primera clase</option>
+        </select><br><br>
+
+        <!-- ¿Necesita equipaje adicional? (radio buttons) -->
+        <label>¿Necesita equipaje adicional?</label><br>
+        <input type="radio" id="equipaje_si" name="equipaje" value="si">
+        <label for="equipaje_si">Sí</label>
+        <input type="radio" id="equipaje_no" name="equipaje" value="no" checked>
+        <label for="equipaje_no">No</label><br><br>
+
+        <!-- Botón de Enviar -->
+        <input type="submit" value="Reservar vuelo">
+
+    </form>
+
+</body>
+</html>
