@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad 3</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Nav más pequeño, contenido más grande */
+    grid-template-rows: auto auto auto auto; /* Distribución normal */
+    gap: 10px; /* Espacio entre los elementos */
+    width: 80%;
+    max-width: 900px;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-color: white;
+}
+
+.nav {
+    grid-row: 1 / -1; /* Ocupa toda la altura */
+    background-color: #9ACD32;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.header, .article, .ads, .footer {
+    background-color: #9ACD32;
+    padding: 20px;
+    text-align: left;
+}
+
+.header {
+    grid-column: 2;
+}
+
+.article {
+    grid-column: 2;
+    height: 200px; /* Aumenta el tamaño de Article */
+}
+
+.ads {
+    grid-column: 2;
+}
+
+.footer {
+    grid-column: 2;
+}
+
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Nav más pequeño, contenido más grande */
+    grid-template-rows: auto auto auto auto; /* Distribución normal */
+    gap: 10px; /* Espacio entre los elementos */
+    width: 80%;
+    max-width: 900px;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-color: white;
+}
+
+.nav {
+    grid-row: 1 / -1; /* Ocupa toda la altura */
+    background-color: #9ACD32;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.header, .article, .ads, .footer {
+    background-color: #9ACD32;
+    padding: 10px;
+    text-align: left;
+}
+
+.header {
+    grid-column: 2;
+}
+
+.article {
+    grid-column: 2;
+    height: 230px; /* Aumenta el tamaño de Article */
+}
+
+.ads {
+    grid-column: 2;
+}
+
+.footer {
+    grid-column: 2;
+}
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="grid-container">
+        <nav class="nav">Nav</nav>
+        <header class="header">Header</header>
+        <article class="article">Article</article>
+        <section class="ads">Ads</section>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
+

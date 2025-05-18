@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Noticias yolandaLlamas/practicas-lmsgi</title>
+  <link href="https://github.com/yolandaLlamas/practicas-lmsgi/commits/main.atom" rel="self"/>
+  <link href="https://github.com/yolandaLlamas/practicas-lmsgi"/>
+  
+  <updated>2025-04-22T10:00:00Z</updated>
+  
+  <author>
+    <name>yolandaLlamas</name>
+  </author>
+
+  <id>https://github.com/yolandaLlamas/practicas-lmsgi</id>
+
+  <entry>
+    <title>Última actualización</title>
+    <link href="https://github.com/yolandaLlamas/practicas-lmsgi/commit/abc123"/>
+    <id>tag:github.com,2025-04-22:/commit/abc123</id>
+    <updated>2025-04-22T10:00:00Z</updated>
+    <summary>Descripción del último commit</summary>
+    <author>
+      <name>yolandaLlamas</name>
+    </author>
+  </entry>
+</feed>
